@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 字符编码与移动端适配设置 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人名片</title>
+    <!-- 引入外部样式表，实现结构与样式分离 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 主容器：用于将名片卡片在页面中居中显示 -->
+    <main class="container">
+        <!-- 名片卡片：包含头像、姓名、职位和联系方式 -->
+        <div class="card">
+            <!-- 圆形头像：使用内联 SVG 数据作为默认占位头像，可替换为真实图片路径 -->
+            <img class="avatar"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23dbeafe'/%3E%3Ccircle cx='60' cy='46' r='20' fill='%2360a5fa'/%3E%3Cpath d='M20 108c4-24 20-34 40-34s36 10 40 34' fill='%2360a5fa'/%3E%3C/svg%3E"
+                 alt="个人头像">
+
+            <!-- 姓名 -->
+            <h1 class="name">张三</h1>
+
+            <!-- 职位 -->
+            <p class="job-title">前端开发工程师</p>
+
+            <!-- 分隔线：视觉上区分个人信息与联系方式 -->
+            <hr class="divider">
+
+            <!-- 联系方式区块 -->
+            <ul class="contact">
+                <!-- 电话 -->
+                <li class="contact-item">
+                    <span class="contact-icon">&#9742;</span>
+                    <span class="contact-text">138-0000-0000</span>
+                </li>
+                <!-- 邮箱 -->
+                <li class="contact-item">
+                    <span class="contact-icon">&#9993;</span>
+                    <span class="contact-text">zhangsan@example.com</span>
+                </li>
+                <!-- 所在城市 -->
+                <li class="contact-item">
+                    <span class="contact-icon">&#9873;</span>
+                    <span class="contact-text">中国 · 北京</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
